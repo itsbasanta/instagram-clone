@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram-like App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ---------------------- Header Section ---------------------- -->
+    <header>
+        <div class="logo">
+            <a href="/" class="logo-link">InstaClone</a>
+        </div>
+        <nav>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#login" class="nav-link">Login</a>
+            <a href="#signup" class="nav-link">Sign Up</a>
+        </nav>
+    </header>
+
+    <!-- ---------------------- Hero Section ---------------------- -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to InstaClone</h1>
+            <p>Share your moments, connect with friends, and discover the world.</p>
+            <div class="cta-buttons">
+                <a href="#signup" class="cta-btn">Get Started</a>
+                <a href="#features" class="cta-btn secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-image.jpg" alt="App Preview" class="hero-img">
+        </div>
+    </section>
+
+    <!-- ---------------------- About Section ---------------------- -->
+    <section id="about" class="about">
+        <h2>About InstaClone</h2>
+        <p>InstaClone is a platform that allows users to share their moments through photos, videos, stories, and more. Whether you're sharing memories, exploring new trends, or discovering creative content, InstaClone is your go-to app for social interaction.</p>
+    </section>
+
+    <!-- ---------------------- Features Section ---------------------- -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="assets/photo-sharing.svg" alt="Photo Sharing">
+                <h3>Photo & Video Sharing</h3>
+                <p>Upload and share your photos and videos with your friends.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/stories.svg" alt="Stories">
+                <h3>Stories</h3>
+                <p>Share temporary content that lasts for 24 hours.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/reels.svg" alt="Reels">
+                <h3>Reels</h3>
+                <p>Create and explore short, engaging videos with music and effects.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/direct-messages.svg" alt="Direct Messages">
+                <h3>Direct Messaging</h3>
+                <p>Send private messages, photos, and videos to your friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------- Call to Action Section ---------------------- -->
+    <section id="cta" class="cta-section">
+        <h2>Ready to join InstaClone?</h2>
+        <p>Sign up today and start sharing your moments with friends and the world.</p>
+        <a href="#signup" class="cta-btn">Sign Up Now</a>
+    </section>
+
+    <!-- ---------------------- Footer Section ---------------------- -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 InstaClone. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">IG</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ---------------------- Login and Signup Modals ---------------------- -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h3>Login</h3>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signup" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h3>Sign Up</h3>
+            <form action="/signup" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

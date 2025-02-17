@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feed - InstaClone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ---------------------- Header Section ---------------------- -->
+    <header>
+        <div class="logo">
+            <a href="/" class="logo-link">InstaClone</a>
+        </div>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#explore" class="nav-link">Explore</a>
+            <a href="#messages" class="nav-link">Messages</a>
+            <a href="#notifications" class="nav-link">Notifications</a>
+            <a href="#profile" class="nav-link">Profile</a>
+        </nav>
+    </header>
+
+    <!-- ---------------------- Feed Section ---------------------- -->
+    <section id="feed">
+        <!-- Post 1 -->
+        <div class="post-item">
+            <div class="post-header">
+                <img src="assets/profile-pic.jpg" alt="Profile Picture" class="post-author-pic">
+                <div class="post-author-info">
+                    <h3>John Doe</h3>
+                    <p>@john_doe</p>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <img src="assets/post1.jpg" alt="Post 1">
+            </div>
+
+            <div class="post-actions">
+                <button class="like-btn">Like</button>
+                <button class="comment-btn">Comment</button>
+                <button class="share-btn">Share</button>
+            </div>
+
+            <div class="post-stats">
+                <p class="likes-count">150 Likes</p>
+                <p class="comments-count">30 Comments</p>
+            </div>
+
+            <div class="comments-section">
+                <div class="comment">
+                    <strong>@janedoe</strong> Amazing shot! <span class="comment-time">2 hours ago</span>
+                </div>
+                <div class="comment">
+                    <strong>@alice_smith</strong> Love the colors! <span class="comment-time">1 hour ago</span>
+                </div>
+                <div class="comment-form">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button class="post-comment">Post</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Posts -->
+        <div class="post-item">
+            <div class="post-header">
+                <img src="assets/profile-pic.jpg" alt="Profile Picture" class="post-author-pic">
+                <div class="post-author-info">
+                    <h3>Jane Doe</h3>
+                    <p>@janedoe</p>
+                </div>
+            </div>
+
+            <div class="post-content">
+                <img src="assets/post2.jpg" alt="Post 2">
+            </div>
+
+            <div class="post-actions">
+                <button class="like-btn">Like</button>
+                <button class="comment-btn">Comment</button>
+                <button class="share-btn">Share</button>
+            </div>
+
+            <div class="post-stats">
+                <p class="likes-count">200 Likes</p>
+                <p class="comments-count">40 Comments</p>
+            </div>
+
+            <div class="comments-section">
+                <div class="comment">
+                    <strong>@bob_jones</strong> Stunning view! <span class="comment-time">5 hours ago</span>
+                </div>
+                <div class="comment-form">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button class="post-comment">Post</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------- Footer Section ---------------------- -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 InstaClone. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">IG</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

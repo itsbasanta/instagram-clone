@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Settings - InstaClone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ---------------------- Header Section ---------------------- -->
+    <header>
+        <div class="logo">
+            <a href="/" class="logo-link">InstaClone</a>
+        </div>
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#explore" class="nav-link">Explore</a>
+            <a href="#messages" class="nav-link">Messages</a>
+            <a href="#notifications" class="nav-link">Notifications</a>
+            <a href="#settings" class="nav-link active">Settings</a>
+        </nav>
+    </header>
+
+    <!-- ---------------------- Settings Section ---------------------- -->
+    <section id="settings">
+        <div class="settings-header">
+            <h3>Account Settings</h3>
+        </div>
+
+        <!-- Profile Settings -->
+        <div class="settings-category">
+            <h4>Profile Settings</h4>
+            <form id="profile-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your new username">
+                </div>
+                <div class="input-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Enter your bio"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="profile-pic">Profile Picture</label>
+                    <input type="file" id="profile-pic" name="profile-pic">
+                </div>
+                <button type="submit" class="save-btn">Save Profile</button>
+            </form>
+        </div>
+
+        <!-- Privacy Settings -->
+        <div class="settings-category">
+            <h4>Privacy Settings</h4>
+            <form id="privacy-form">
+                <div class="input-group">
+                    <label for="account-privacy">Account Privacy</label>
+                    <select id="account-privacy" name="account-privacy">
+                        <option value="public">Public</option>
+                        <option value="private">Private</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message-privacy">Message Privacy</label>
+                    <select id="message-privacy" name="message-privacy">
+                        <option value="everyone">Everyone</option>
+                        <option value="followers">Followers</option>
+                    </select>
+                </div>
+                <button type="submit" class="save-btn">Save Privacy Settings</button>
+            </form>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="settings-category">
+            <h4>Notification Settings</h4>
+            <form id="notification-form">
+                <div class="input-group">
+                    <label for="likes-notifications">Likes</label>
+                    <input type="checkbox" id="likes-notifications" name="likes-notifications" checked>
+                </div>
+                <div class="input-group">
+                    <label for="comments-notifications">Comments</label>
+                    <input type="checkbox" id="comments-notifications" name="comments-notifications" checked>
+                </div>
+                <div class="input-group">
+                    <label for="followers-notifications">New Followers</label>
+                    <input type="checkbox" id="followers-notifications" name="followers-notifications" checked>
+                </div>
+                <button type="submit" class="save-btn">Save Notification Settings</button>
+            </form>
+        </div>
+
+        <!-- Change Password -->
+        <div class="settings-category">
+            <h4>Change Password</h4>
+            <form id="password-form">
+                <div class="input-group">
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password" name="current-password" placeholder="Enter current password">
+                </div>
+                <div class="input-group">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter new password">
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+                </div>
+                <button type="submit" class="save-btn">Change Password</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ---------------------- Footer Section ---------------------- -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 InstaClone. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">IG</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

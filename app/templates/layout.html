@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram-like Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------------------- Header Section ---------------------- -->
+    <header>
+        <div class="logo">
+            <a href="/">Logo</a>
+        </div>
+        <nav class="nav">
+            <a href="#feed">Feed</a>
+            <a href="#explore">Explore</a>
+            <a href="#messages">Messages</a>
+            <a href="#profile">Profile</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+
+    <!-- ---------------------- Main Content ---------------------- -->
+    <main>
+        <!-- -------------------- Feed Section -------------------- -->
+        <section id="feed">
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="profile.jpg" alt="User Avatar" class="avatar">
+                        <span class="username">john_doe</span>
+                    </div>
+                    <button class="options">...</button>
+                </div>
+                <div class="post-content">
+                    <img src="post1.jpg" alt="Post Image" class="post-image">
+                </div>
+                <div class="post-actions">
+                    <button class="like-button">❤️</button>
+                    <button class="comment-button">💬</button>
+                    <button class="share-button">🔗</button>
+                </div>
+                <div class="comments">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------- Explore Section -------------------- -->
+        <section id="explore" class="explore-page">
+            <h2>Explore</h2>
+            <div class="explore-grid">
+                <!-- Dynamically filled with posts -->
+            </div>
+        </section>
+
+        <!-- -------------------- Profile Section -------------------- -->
+        <section id="profile" class="profile-page">
+            <div class="profile-header">
+                <img src="profile.jpg" alt="User Avatar" class="avatar">
+                <span class="username">john_doe</span>
+                <button class="edit-profile">Edit Profile</button>
+            </div>
+            <div class="profile-content">
+                <h3>My Posts</h3>
+                <!-- Dynamically filled with posts -->
+            </div>
+        </section>
+
+        <!-- -------------------- Notifications Bell -------------------- -->
+        <div class="notification-bell">
+            <span class="notification-count">0</span>
+        </div>
+
+        <!-- -------------------- Stories Section -------------------- -->
+        <section id="stories" class="stories-container">
+            <!-- Dynamically filled with story thumbnails -->
+        </section>
+
+    </main>
+
+    <!-- ---------------------- Footer Section ---------------------- -->
+    <footer>
+        <p>&copy; 2025 Instagram-like Application | All Rights Reserved</p>
+    </footer>
+
+    <!-- ---------------------- Modal Section (Example) ---------------------- -->
+    <div class="modal" id="post-modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <h2>Post Details</h2>
+            <p>This is where the post details will appear.</p>
+        </div>
+    </div>
+
+    <!-- Include the JS file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
